@@ -1,0 +1,91 @@
+
+2019-03-25 13:42:31 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:42:31 INFO  AddressService:16 - street: Pobedy house: 95
+2019-03-25 13:42:31 INFO  UniversityService:16 - university: BGU address: street: null house: 0
+2019-03-25 13:44:29 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:44:29 INFO  AddressService:16 - street: Pobedy house: 95
+2019-03-25 13:44:29 INFO  UniversityService:16 - street: null house: 0
+2019-03-25 13:47:52 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:47:52 INFO  AddressService:20 - country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 13:47:52 INFO  UniversityService:16 - country: null city: null street: null house: 0
+2019-03-25 13:50:30 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:50:30 INFO  AddressService:20 - country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 13:50:30 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 13:52:04 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:52:04 INFO  AddressService:20 - country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 13:52:04 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 13:53:30 INFO  CityService:20 - Moscow Russia
+2019-03-25 13:53:30 INFO  AddressService:20 - 
+2019-03-25 13:53:30 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:21:17 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:21:17 INFO  AddressService:20 - Russia
+2019-03-25 14:21:17 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:22:29 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:22:29 INFO  AddressService:20 - Moscow Russia
+2019-03-25 14:22:29 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:23:37 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:23:37 INFO  AddressService:20 - country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:23:37 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:25:25 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:25:25 INFO  AddressService:20 - Moscow Russia
+2019-03-25 14:25:25 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:34:20 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:34:20 INFO  AddressService:20 - country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:34:20 INFO  UniversityService:18 - university: BGU address: country: null city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:35:53 INFO  CityService:20 - Moscow Russia
+2019-03-25 14:35:53 INFO  AddressService:20 - city: Moscow Russia street: Pobedy house: 95
+2019-03-25 14:35:53 INFO  UniversityService:18 - university: BGU address: city: Moscow Russia street: Pobedy house: 95
+2019-03-25 15:12:50 INFO  CityService:20 - Moscow Russia
+2019-03-25 15:12:50 INFO  AddressService:20 - city: Moscow Russia street: Pobedy house: 95
+2019-03-25 15:12:50 INFO  UniversityService:18 - university: BGU address: city: Moscow Russia street: Pobedy house: 95
+2019-03-25 15:56:23 INFO  MyThread:17 - MyThread run
+2019-03-25 15:56:26 INFO  MyThread:17 - MyThread run
+2019-03-25 15:56:29 INFO  MyThreadRunnable:17 - MyThreadRunnable run
+2019-03-25 15:56:32 INFO  MyThreadRunnable:17 - MyThreadRunnable run
+2019-03-25 16:52:04 INFO  CityService:20 - Moscow Russia
+2019-03-25 16:52:04 INFO  AddressService:20 - city: Moscow Russia street: Pobedy house: 95
+2019-03-25 16:52:04 INFO  UniversityService:18 - university: BGU address: city: Moscow Russia street: Pobedy house: 95
+2019-03-25 22:08:58 INFO  Runner:48 - Brest Belarus
+2019-03-25 22:21:40 INFO  Runner:48 - Brest Belarus
+2019-03-26 10:33:29 INFO  Runner:45 - Brest Belarus
+2019-03-26 10:45:04 INFO  Runner:45 - Brest Belarus
+2019-03-26 15:21:16 INFO  Runner:47 - city: Brest null street: Beloruuskaya house: 112
+2019-03-26 15:22:43 INFO  Runner:47 - city: Brest null street: Beloruuskaya house: 112
+2019-03-26 15:23:16 INFO  Runner:47 - city: Brest null street: Beloruuskaya house: 112
+2019-03-26 15:24:20 INFO  Runner:47 - city: Brest null street: Beloruuskaya house: 112
+2019-03-26 15:26:31 INFO  Runner:45 - Brest Belarus
+2019-03-26 15:35:26 INFO  Runner:45 - Brest Belarus
+2019-03-26 15:36:27 INFO  Runner:47 - city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 15:49:29 INFO  Runner:47 - city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 15:52:31 INFO  Runner:49 - university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 16:14:37 INFO  Runner:51 - chair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23university: pricladnaya informatica address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 16:21:52 INFO  Runner:51 - chair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:54:18 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:57:10 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:57:42 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:58:04 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:58:38 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:59:01 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 16:59:49 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:00:57 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:02:24 INFO  Runner:53 - university: VGMU address: city: null null street: null house: 0
+2019-03-26 17:11:57 INFO  Runner:53 - university: null address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 17:13:02 INFO  Runner:53 - university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 17:18:20 INFO  Runner:53 - university: null address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 17:19:08 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:19:45 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:21:34 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:23:44 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:24:29 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:26:56 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:27:15 INFO  Runner:53 - university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 17:35:47 INFO  Runner:53 - university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 17:36:54 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:38:59 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:39:13 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 17:39:59 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 19:40:51 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 19:40:51 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 19:47:36 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94null
+2019-03-26 19:49:24 INFO  Runner:53 - EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112
+2019-03-26 20:19:40 INFO  Runner:55 - lecture: EkaterinaTolinafemaleEkaterinachair: pricladnaya informaticaemail: inf@gmail.comphone: 309-15-23faculty: pedagogicheskiyemail: pd@gmail.comphone: 135-26-94university: VGMU address: city: Brest Belarus street: Beloruuskaya house: 112 discipline: history
