@@ -1,0 +1,31 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.IPassengerDao"> 
+
+	<insert id = "insert" parameterType = "Passenger" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Passengers (id, name, second_name, passport) VALUES (#{id}, #{name}, #{secondName}, #{passport})
+	</insert>
+	
+	<resultMap type = "Passenger" id = "PassengerResultMap"> 
+		<id property = "id" column = "passenger_id"/> 
+		<result property = "name" column = "passenger_name"/> 
+		<result property = "secondName" column = "passenger_secondName"/> 
+		<result property = "passport" column = "passenger_passport"/> 
+	</resultMap> 
+	
+	<select id = "getById" parameterType ="int" resultMap = "PassengerResultMap"> 
+		select pas.id as passenger_id,
+		pas.name as passenger_name,
+		pas.second_name as passenger_secondName,
+		pas.passport as passenger_passport
+		
+		from Passengers pas WHERE id=#{id} 
+	</select> 
+	
+	<update id = "update" parameterType = "Passenger">
+	UPDATE Passengers SET name=#{name}, second_name=#{secondName}, passport=#{passport} WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Passengers WHERE id=#{id}
+	</delete>
+</mapper>

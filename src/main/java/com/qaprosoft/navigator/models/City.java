@@ -16,4 +16,10 @@ public class City extends AbstractModel {
 	public void setCountry(Country country) {
 		this.country = country;
 	}
+	@Override
+	public String toString() {
+		return "City [city=" + city + ", country=" + country + "]";
+	}
+	
+	
 }

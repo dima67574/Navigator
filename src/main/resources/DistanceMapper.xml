@@ -1,0 +1,36 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.IDistanceDao"> 
+
+	<insert id = "insert" parameterType = "Distance" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Distances (id, distance) VALUES (#{id}, #{distance})
+	</insert>
+	
+	<resultMap type = "Distance" id = "DistanceResultMap"> 
+		<id property = "id" column = "distance_id"/> 
+	<result property = "distance" column = "distance"/> 
+	<association property="firstStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.FirstStopResultMap"/> 
+	<association property="lastStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.LastStopResultMap"/> 
+	</resultMap> 
+	
+	<select id = "getById" parameterType ="int" resultMap = "DistanceResultMap"> 
+		select dis.id as distance_id,
+		dis.distance as distance,
+		st.id as stop_id,
+		st.number as stop_number,
+		stp.id as lstop_id,
+		stp.number as lstop_number
+			
+		FROM Distances dis LEFT OUTER JOIN Stops st ON dis.Stop_from = st.id
+		LEFT OUTER JOIN Stops stp ON dis.Stop_to = stp.id
+		
+		WHERE dis.id = #{id}
+	</select> 
+	
+	<update id = "update" parameterType = "Distance">
+	UPDATE Distances SET distance=#{distance} WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Distances WHERE id=#{id}
+	</delete>
+</mapper>

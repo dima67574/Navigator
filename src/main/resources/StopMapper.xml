@@ -1,0 +1,39 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.IStopDao"> 
+
+	<insert id = "insert" parameterType = "Stop" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Stops (id, number) VALUES (#{id}, #{number})
+	</insert>
+	
+	<resultMap type = "Stop" id = "FirstStopResultMap"> 
+		<id property = "id" column = "stop_id"/> 
+	<result property = "number" column = "stop_number"/> 
+	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityResultMap"/> 
+	</resultMap> 
+	
+	<resultMap type = "Stop" id = "LastStopResultMap"> 
+		<id property = "id" column = "lstop_id"/> 
+	<result property = "number" column = "lstop_number"/> 
+	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityResultMap"/> 
+	</resultMap>
+	
+	<select id = "getById" parameterType ="int" resultMap = "StopResultMap"> 
+		select st.id as stop_id,
+		st.number as stop_number,
+		ci.id as city_id,
+		ci.city as city_name,
+		co.id as country_id,
+		co.country as country_name
+		FROM Stops st LEFT OUTER JOIN Cities ci ON st.Cities_id = ci.id
+		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id 
+		WHERE st.id = #{id}
+	</select> 
+	
+	<update id = "update" parameterType = "Stop">
+	UPDATE Stops SET number=#{number} WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Stops WHERE id=#{id}
+	</delete>
+</mapper>

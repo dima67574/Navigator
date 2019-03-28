@@ -9,4 +9,10 @@ public class Driver extends Person {
 	public void setLicence(License licence) {
 		this.licence = licence;
 	}
+	@Override
+	public String toString() {
+		return "Driver [licence=" + licence + "]";
+	}
+	
+	
 }

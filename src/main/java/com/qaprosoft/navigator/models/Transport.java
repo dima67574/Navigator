@@ -37,4 +37,11 @@ public class Transport extends AbstractModel {
 	public void setBusDriver(Driver driver) {
 		this.driver = driver;
 	}
+	@Override
+	public String toString() {
+		return "Transport [number=" + number + ", fuel=" + fuel + ", firstStop=" + firstStop + ", lastStop=" + lastStop
+				+ ", driver=" + driver + "]";
+	}
+	
+	
 }

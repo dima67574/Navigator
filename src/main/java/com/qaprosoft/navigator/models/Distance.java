@@ -23,4 +23,10 @@ public class Distance extends AbstractModel {
 	public void setLastStop(Stop lastStop) {
 		this.lastStop = lastStop;
 	}
+	@Override
+	public String toString() {
+		return "Distance [distance=" + distance + ", firstStop=" + firstStop + ", lastStop=" + lastStop + "]";
+	}
+	
+	
 }

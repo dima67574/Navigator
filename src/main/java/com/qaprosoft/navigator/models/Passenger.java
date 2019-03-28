@@ -9,5 +9,13 @@ public class Passenger extends Person{
 	public void setPassport(String passport) {
 		this.passport = passport;
 	}
+	@Override
+	public String toString() {
+		return "Passenger [passport=" + passport + ", getName()=" + getName() + ", getSecondName()=" + getSecondName()
+				+ "]";
+	}
+	
+	
+	
 
 }

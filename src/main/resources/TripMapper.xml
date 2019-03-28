@@ -1,0 +1,58 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.ITripDao"> 
+
+	<insert id = "insert" parameterType = "Trip" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Trips (id) VALUES (#{id})
+	</insert>
+	
+	<resultMap type = "Trip" id = "TripResultMap"> 
+	<id property = "id" column = "trip_id"/> 
+	<association property="transport" resultMap = "com.qaprosoft.navigator.dao.ITransportDao.TransportResultMap"/> 
+	<association property="passenger" resultMap = "com.qaprosoft.navigator.dao.IPassengerDao.PassengerResultMap"/> 
+	</resultMap> 
+	
+	
+	<select id = "getById" parameterType ="int" resultMap = "TripResultMap"> 
+		select trp.id as trip_id,
+		tr.id as transport_id,
+		tr.number as transport_number,
+		tr.fuel as transport_fuel,
+		st.id as stop_id,
+		st.number as stop_number,
+		ci.id as city_id,
+		ci.city as city_name,
+		co.id as country_id,
+		co.country as country_name,
+		dr.id as driver_id,
+		dr.name as driver_name,
+		dr.second_name as driver_secondName,
+		l.id as license_id,
+		l.DL as dl,
+		l.class as class,
+		l.EXP as exp,
+		l.END as end,
+		t.id as type_id,
+		t.type as type_name,
+		pas.id as passenger_id,
+		pas.name as passenger_name,
+		pas.second_name as passenger_secondName,
+		pas.passport as passenger_passport
+		FROM Trips trp ON trp.Transport_id = tr.id
+		LEFT OUTER JOIN Stops st ON tr.Stop_from = st.id
+		LEFT OUTER JOIN Stops stp ON tr.Stop_from = stp.id
+		LEFT OUTER JOIN Drivers dr ON tr.Drivers_id = dr.id
+		LEFT OUTER JOIN Licenses l ON dr.Lisences_id = l.id
+		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
+		LEFT OUTER JOIN Passengers pas ON trp.Passengers_id = pas.id
+				
+		WHERE trp.id = #{id}
+	</select> 
+	
+	<update id = "update" parameterType = "Trip">
+	UPDATE Trips SET WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Trips WHERE id=#{id}
+	</delete>
+</mapper>

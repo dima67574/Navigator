@@ -16,4 +16,10 @@ public class Trip extends AbstractModel {
 	public void setTransport(Transport transport) {
 		this.transport = transport;
 	}
+	@Override
+	public String toString() {
+		return "Trip [passenger=" + passenger + ", transport=" + transport + "]";
+	}
+	
+	
 }

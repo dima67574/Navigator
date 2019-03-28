@@ -16,4 +16,10 @@ public class Stop {
 	public void setCity(City city) {
 		this.city = city;
 	}
+	@Override
+	public String toString() {
+		return "Stop [number=" + number + ", city=" + city + "]";
+	}
+	
+	
 }

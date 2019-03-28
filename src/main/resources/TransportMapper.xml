@@ -1,0 +1,55 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.ITransportDao"> 
+
+	<insert id = "insert" parameterType = "Transport" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Transports (id, number, fuel) VALUES (#{id}, #{number}, #{fuel})
+	</insert>
+	
+	<resultMap type = "Transport" id = "TransportResultMap"> 
+		<id property = "id" column = "transport_id"/> 
+	<result property = "number" column = "transport_number"/>
+	<result property = "fuel" column = "transport_fuel"/>
+	<association property="firstStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.FirstStopResultMap"/> 
+	<association property="lastStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.LastStopResultMap"/> 
+	<association property="driver" resultMap = "com.qaprosoft.navigator.dao.IDriverDao.DriverResultMap"/> 
+	<association property="type" resultMap = "com.qaprosoft.navigator.dao.ITypeDao.TypeResultMap"/> 
+	</resultMap> 
+	
+	
+	<select id = "getById" parameterType ="int" resultMap = "TransportResultMap"> 
+		select tr.id as transport_id,
+		tr.number as transport_number,
+		tr.fuel as transport_fuel,
+		st.id as stop_id,
+		st.number as stop_number,
+		ci.id as city_id,
+		ci.city as city_name,
+		co.id as country_id,
+		co.country as country_name,
+		dr.id as driver_id,
+		dr.name as driver_name,
+		dr.second_name as driver_secondName,
+		l.id as license_id,
+		l.DL as dl,
+		l.class as class,
+		l.EXP as exp,
+		l.END as end,
+		t.id as type_id,
+		t.type as type_name
+		FROM Transport tr LEFT OUTER JOIN Stops st ON tr.Stop_from = st.id
+		LEFT OUTER JOIN Stops stp ON tr.Stop_from = stp.id
+		LEFT OUTER JOIN Drivers dr ON tr.Drivers_id = dr.id
+		LEFT OUTER JOIN Licenses l ON dr.Lisences_id = l.id
+		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
+		
+		WHERE tr.id = #{id}
+	</select> 
+	
+	<update id = "update" parameterType = "Transport">
+	UPDATE Transport SET number=#{number}, fuel=#{fuel} WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Transport WHERE id=#{id}
+	</delete>
+</mapper>

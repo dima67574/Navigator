@@ -1,0 +1,33 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace = "com.qaprosoft.navigator.dao.ILicenseDao"> 
+
+	<insert id = "insert" parameterType = "License" useGeneratedKeys = "true" keyProperty = "id">
+	INSERT INTO  Licenses (id, DL, class, EXP, END) VALUES (#{id}, #{dl}, #{clas}, #{exp}, #{end})
+	</insert>
+	
+	<resultMap type = "License" id = "LicenseResultMap"> 
+		<id property = "id" column = "license_id"/> 
+		<result property = "dl" column = "dl"/> 
+		<result property = "clas" column = "class"/> 
+		<result property = "exp" column = "exp"/> 
+		<result property = "end" column = "end"/> 
+	
+	</resultMap> 
+	
+	<select id = "getById" parameterType ="int" resultMap = "LicenseResultMap"> 
+		select l.id as license_id,
+		l.DL as dl
+		l.class as class
+		l.EXP as exp
+		l.END as end
+		from Licenses l WHERE id=#{id} 
+	</select> 
+	
+	<update id = "update" parameterType = "License">
+	UPDATE Licenses SET DL=#{dl}, class=#{clas}, EXP=#{exp}, END=#{end} WHERE id=#{id}
+	</update>
+
+	<delete id = "delete" parameterType = "int">
+	DELETE FROM Licenses WHERE id=#{id}
+	</delete>
+</mapper>
