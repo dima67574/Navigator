@@ -1,6 +1,6 @@
 package com.qaprosoft.navigator.models;
 
-public class Stop {
+public class Stop extends AbstractModel{
 	private String number;
 	private City city;
 	public Stop() {}
@@ -16,9 +16,11 @@ public class Stop {
 	public void setCity(City city) {
 		this.city = city;
 	}
+	
+
 	@Override
 	public String toString() {
-		return "Stop [number=" + number + ", city=" + city + "]";
+		return  number ;
 	}
 	
 	

@@ -4,6 +4,7 @@ public class Distance extends AbstractModel {
 	private int distance;
 	private Stop firstStop;
 	private Stop lastStop;
+	private Transport transport;
 	public Distance() {}
 	public int getDistance() {
 		return distance;
@@ -23,9 +24,17 @@ public class Distance extends AbstractModel {
 	public void setLastStop(Stop lastStop) {
 		this.lastStop = lastStop;
 	}
+	
+	public Transport getTransport() {
+		return transport;
+	}
+	public void setTransport(Transport transport) {
+		this.transport = transport;
+	}
 	@Override
 	public String toString() {
-		return "Distance [distance=" + distance + ", firstStop=" + firstStop + ", lastStop=" + lastStop + "]";
+		return "Distance [distance=" + distance + ", firstStop=" + firstStop + ", lastStop=" + lastStop + ", transport-"
+				+ transport + "]";
 	}
 	
 	

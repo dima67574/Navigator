@@ -1,12 +1,17 @@
 package com.qaprosoft.navigator.models;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class License {
+public class License extends AbstractModel {
 	private String dl;
 	private String clas;
 	private Date exp;
 	private Date end;
+	private SimpleDateFormat format = new SimpleDateFormat ("yyyy-MM-dd");	
+	private SimpleDateFormat form = new SimpleDateFormat ("yyyy-MM-dd");
+	
 	public License() {}
 	public String getDl() {
 		return dl;
@@ -20,16 +25,23 @@ public class License {
 	public void setClas(String clas) {
 		this.clas = clas;
 	}
-	public Date getExp() {
-		return exp;
+	public String getExp() {
+		return format.format(exp);
 	}
-	public void setExp(Date exp) {
-		this.exp = exp;
+	public void setExp(String exp) throws ParseException {
+		this.exp = format.parse(exp);
 	}
-	public Date getEnd() {
-		return end;
+	public String getEnd() {
+		return form.format(end);
 	}
-	public void setEnd(Date end) {
-		this.end = end;
+	public void setEnd(String end) throws ParseException {
+		this.end = form.parse(end);
 	}
+	@Override
+	public String toString() {
+		return "License [dl=" + dl + ", clas=" + clas + ", exp=" + exp + ", end=" + end + "]";
+	}
+	
+	
+	
 }

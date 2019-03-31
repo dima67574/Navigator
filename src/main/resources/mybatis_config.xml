@@ -10,7 +10,6 @@
 		<typeAlias alias="Driver" type="com.qaprosoft.navigator.models.Driver"/>
 		<typeAlias alias="License" type="com.qaprosoft.navigator.models.License"/>
 		<typeAlias alias="Passenger" type="com.qaprosoft.navigator.models.Passenger"/>
-		<typeAlias alias="Person" type="com.qaprosoft.navigator.models.Person"/>
 		<typeAlias alias="Stop" type="com.qaprosoft.navigator.models.Stop"/>
 		<typeAlias alias="Transport" type="com.qaprosoft.navigator.models.Transport"/>
 		<typeAlias alias="Trip" type="com.qaprosoft.navigator.models.Trip"/>
@@ -31,17 +30,16 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource = "CityMapper.xml"/>
-		<mapper resource = "CountryMapper.xml"/>
-		<mapper resource = "DistanceMapper.xml"/>
-		<mapper resource = "DriverMapper.xml"/>
-		<mapper resource = "LicenseMapper.xml"/>
-		<mapper resource = "PassengerMapper.xml"/>
-		<mapper resource = "PersonMapper.xml"/>
-		<mapper resource = "StopMapper.xml"/>
-		<mapper resource = "TransportMapper.xml"/>
-		<mapper resource = "TripMapper.xml"/>
-		<mapper resource = "TypeMapper.xml"/>
+		<mapper resource = "mapper/CityMapper.xml"/>
+		<mapper resource = "mapper/CountryMapper.xml"/>
+		<mapper resource = "mapper/DistanceMapper.xml"/>
+		<mapper resource = "mapper/DriverMapper.xml"/>
+		<mapper resource = "mapper/LicenseMapper.xml"/>
+		<mapper resource = "mapper/PassengerMapper.xml"/>
+		<mapper resource = "mapper/StopMapper.xml"/>
+		<mapper resource = "mapper/TransportMapper.xml"/>
+		<mapper resource = "mapper/TripMapper.xml"/>
+		<mapper resource = "mapper/TypeMapper.xml"/>
 		
 	</mappers> 
 	

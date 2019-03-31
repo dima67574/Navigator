@@ -1,18 +1,19 @@
 package com.qaprosoft.navigator.models;
 
 public class Driver extends Person {
-	private License licence;
+	private License license;
 	public Driver() {}
-	public License getLicence() {
-		return licence;
+	public License getLicense() {
+		return license;
 	}
-	public void setLicence(License licence) {
-		this.licence = licence;
+	public void setLicense(License license) {
+		this.license = license;
 	}
 	@Override
 	public String toString() {
-		return "Driver [licence=" + licence + "]";
+		return "Driver [id=" + getId()+ "name=" + getName() + ", secondName=" + getSecondName() +" license=" + license +  "]";
 	}
+
 	
 	
 }

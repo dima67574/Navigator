@@ -11,7 +11,7 @@ public class Type extends AbstractModel{
 	}
 	@Override
 	public String toString() {
-		return "Type [type=" + type + "]";
+		return type;
 	}
 	
 	

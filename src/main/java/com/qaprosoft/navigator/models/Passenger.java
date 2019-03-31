@@ -11,7 +11,7 @@ public class Passenger extends Person{
 	}
 	@Override
 	public String toString() {
-		return "Passenger [passport=" + passport + ", getName()=" + getName() + ", getSecondName()=" + getSecondName()
+		return "Passenger [passport=" + passport + ", name=" + getName() + ", secondName=" + getSecondName()
 				+ "]";
 	}
 	

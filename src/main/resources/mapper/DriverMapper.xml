@@ -9,7 +9,7 @@
 		<id property = "id" column = "driver_id"/> 
 		<result property = "name" column = "driver_name"/> 
 		<result property = "secondName" column = "driver_secondName"/> 
-		<association property="lisence" resultMap = "com.qaprosoft.navigator.dao.ILisenceDao.LisenceResultMap"/> 
+		<association property="license" resultMap = "com.qaprosoft.navigator.dao.ILicenseDao.LicenseResultMap"/> 
 	</resultMap> 
 	
 	<select id = "getById" parameterType ="int" resultMap = "DriverResultMap"> 
@@ -21,7 +21,7 @@
 		l.class as class,
 		l.EXP as exp,
 		l.END as end
-		FROM Drivers dr LEFT OUTER JOIN Licenses l ON dr.Lisences_id = l.id WHERE dr.id = #{id}
+		FROM Drivers dr LEFT OUTER JOIN Licenses l ON dr.Licenses_id = l.id WHERE dr.id = #{id}
 	</select> 
 	
 	<update id = "update" parameterType = "Driver">

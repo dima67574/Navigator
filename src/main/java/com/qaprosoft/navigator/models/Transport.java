@@ -6,6 +6,7 @@ public class Transport extends AbstractModel {
 	private Stop firstStop;
 	private Stop lastStop;
 	private Driver driver;
+	private Type type;
 	public Transport() {}
 	public String getNumber() {
 		return number;
@@ -31,17 +32,25 @@ public class Transport extends AbstractModel {
 	public void setLastStop(Stop lastStop) {
 		this.lastStop = lastStop;
 	}
-	public Driver getBusDriver() {
+
+	public Driver getDriver() {
 		return driver;
 	}
-	public void setBusDriver(Driver driver) {
+	public void setDriver(Driver driver) {
 		this.driver = driver;
+	}
+	public Type getType() {
+		return type;
+	}
+	public void setType(Type type) {
+		this.type = type;
 	}
 	@Override
 	public String toString() {
-		return "Transport [number=" + number + ", fuel=" + fuel + ", firstStop=" + firstStop + ", lastStop=" + lastStop
-				+ ", driver=" + driver + "]";
+		return "type=" + type +","+"number=" + number  ;
 	}
+	
+	
 	
 	
 }

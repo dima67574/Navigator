@@ -5,7 +5,7 @@
 	INSERT INTO  Stops (id, number) VALUES (#{id}, #{number})
 	</insert>
 	
-	<resultMap type = "Stop" id = "FirstStopResultMap"> 
+	<resultMap type = "Stop" id = "StopResultMap"> 
 		<id property = "id" column = "stop_id"/> 
 	<result property = "number" column = "stop_number"/> 
 	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityResultMap"/> 

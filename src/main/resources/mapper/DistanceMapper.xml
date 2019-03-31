@@ -7,9 +7,10 @@
 	
 	<resultMap type = "Distance" id = "DistanceResultMap"> 
 		<id property = "id" column = "distance_id"/> 
-	<result property = "distance" column = "distance"/> 
-	<association property="firstStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.FirstStopResultMap"/> 
+	<result property = "distance" column = "distance"/>
+	<association property="firstStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.StopResultMap"/> 
 	<association property="lastStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.LastStopResultMap"/> 
+	<association property="transport" resultMap = "com.qaprosoft.navigator.dao.ITransportDao.TransportResultMap"/> 
 	</resultMap> 
 	
 	<select id = "getById" parameterType ="int" resultMap = "DistanceResultMap"> 
@@ -18,10 +19,16 @@
 		st.id as stop_id,
 		st.number as stop_number,
 		stp.id as lstop_id,
-		stp.number as lstop_number
+		stp.number as lstop_number,
+		tr.id as transport_id,
+		tr.number as transport_number,
+		t.id as type_id,
+		t.type as type_name
 			
 		FROM Distances dis LEFT OUTER JOIN Stops st ON dis.Stop_from = st.id
 		LEFT OUTER JOIN Stops stp ON dis.Stop_to = stp.id
+		LEFT OUTER JOIN Transport tr ON dis.Transport_id = tr.id
+		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
 		
 		WHERE dis.id = #{id}
 	</select> 
