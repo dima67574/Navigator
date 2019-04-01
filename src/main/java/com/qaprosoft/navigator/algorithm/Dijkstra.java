@@ -1,23 +1,58 @@
 package com.qaprosoft.navigator.algorithm;
+
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Map.Entry;
+import java.util.Set;
+
 public class Dijkstra {
-   private static final Graph.Edge[] GRAPH = {
-      new Graph.Edge("a", "b", 7),
-      new Graph.Edge("a", "c", 9),
-      new Graph.Edge("a", "f", 14),
-      new Graph.Edge("b", "c", 10),
-      new Graph.Edge("b", "d", 15),
-      new Graph.Edge("c", "d", 11),
-      new Graph.Edge("c", "f", 2),
-      new Graph.Edge("d", "e", 6),
-      new Graph.Edge("e", "f", 9),
-   };
-   private static final String START = "a";
-   private static final String END = "e";
-  
-   public static void main(String[] args) {
-      Graph g = new Graph(GRAPH);
-      g.dijkstra(START);
-      g.printPath(END);
-   }
+
+    public static Graph calculateShortestPathFromSource(Graph graph, Node source) {
+
+        source.setDistance(0);
+
+        Set<Node> settledNodes = new HashSet<>();
+        Set<Node> unsettledNodes = new HashSet<>();
+        unsettledNodes.add(source);
+
+        while (unsettledNodes.size() != 0) {
+            Node currentNode = getLowestDistanceNode(unsettledNodes);
+            unsettledNodes.remove(currentNode);
+            for (Entry<Node, Integer> adjacencyPair : currentNode.getAdjacentNodes().entrySet()) {
+                Node adjacentNode = adjacencyPair.getKey();
+                Integer edgeWeigh = adjacencyPair.getValue();
+
+                if (!settledNodes.contains(adjacentNode)) {
+                    CalculateMinimumDistance(adjacentNode, edgeWeigh, currentNode);
+                    unsettledNodes.add(adjacentNode);
+                }
+            }
+           
+            settledNodes.add(currentNode);
+        }
+        return graph;
+    }
+
+    private static void CalculateMinimumDistance(Node evaluationNode, Integer edgeWeigh, Node sourceNode) {
+        Integer sourceDistance = sourceNode.getDistance();
+        if (sourceDistance + edgeWeigh < evaluationNode.getDistance()) {
+            evaluationNode.setDistance(sourceDistance + edgeWeigh);
+            LinkedList<Node> shortestPath = new LinkedList<>(sourceNode.getShortestPath());
+            shortestPath.add(sourceNode);
+            evaluationNode.setShortestPath(shortestPath);
+        }
+    }
+
+    private static Node getLowestDistanceNode(Set<Node> unsettledNodes) {
+        Node lowestDistanceNode = null;
+        int lowestDistance = Integer.MAX_VALUE;
+        for (Node node : unsettledNodes) {
+            int nodeDistance = node.getDistance();
+            if (nodeDistance < lowestDistance) {
+                lowestDistance = nodeDistance;
+                lowestDistanceNode = node;
+            }
+        }
+        return lowestDistanceNode;
+    }
 }
-  
