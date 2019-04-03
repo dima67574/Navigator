@@ -9,9 +9,10 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import com.qaprosoft.navigator.models.Distance;
+import com.qaprosoft.navigator.models.Stop;
 public class DijkstraAlgorithm {	
 	   private static final Logger log = LogManager.getLogger(DijkstraAlgorithm.class);
-	   private final Map<String, Vertex> graph;	  
+	   private static Map<String, Vertex> graph;	  
 	   public static class Vertex implements Comparable<Vertex> {
 	      public final String name;
 	      public int dist = Integer.MAX_VALUE; 
@@ -23,6 +24,7 @@ public class DijkstraAlgorithm {
 	      }
 	  
 	      private void printPath() {
+	    	 
 	         if (this == this.previous) {
 	        	 log.info(this.name);
 	         } else if (this.previous == null) {
@@ -31,6 +33,7 @@ public class DijkstraAlgorithm {
 	            this.previous.printPath();
 	            log.info("->"+ this.name+" distance "+this.dist);
 	         }
+			
 	      }
 	  
 	      public int compareTo(Vertex other) {
@@ -42,12 +45,15 @@ public class DijkstraAlgorithm {
 	   {
 		   graph = new HashMap<>((edges.size()));
 		   for (Distance e : edges) {			   
-		         if (!graph.containsKey(e.firstStop1)) graph.put(e.firstStop1, new Vertex(e.firstStop1));
-		         if (!graph.containsKey(e.lastStop1)) graph.put(e.lastStop1, new Vertex(e.lastStop1));
+		         if (!graph.containsKey(e.getFirstStop().getNumber())) graph.put(e.getFirstStop().getNumber(), new Vertex(e.getFirstStop().getNumber()));
+		         if (!graph.containsKey(e.getLastStop().getNumber())) graph.put(e.getLastStop().getNumber(), new Vertex(e.getLastStop().getNumber()));
+		   
 		      }
 		  
 		      for (Distance e : edges) {
-		         graph.get(e.firstStop1).neighbours.put(graph.get(e.lastStop1), e.distance);
+		         graph.get(e.getFirstStop().getNumber()).neighbours.put(graph.get(e.getLastStop().getNumber()), e.getDistance());
+		         
+		  
 		      }
 		   }
 	   
@@ -62,6 +68,7 @@ public class DijkstraAlgorithm {
 	         v.previous = v == source ? source : null;
 	         v.dist = v == source ? 0 : Integer.MAX_VALUE;
 	         q.add(v);
+	         
 	      }
 	  
 	      dijkstra(q);

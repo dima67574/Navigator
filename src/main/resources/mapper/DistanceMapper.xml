@@ -8,8 +8,6 @@
 	<resultMap type = "Distance" id = "DistanceResultMap"> 
 		<id property = "id" column = "distance_id"/> 
 	<result property = "distance" column = "distance"/>
-	<result property = "firstStop1" column = "stop_id"/>
-	<result property = "lastStop1" column = "lstop_id"/>
 	<association property="firstStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.StopResultMap"/> 
 	<association property="lastStop" resultMap = "com.qaprosoft.navigator.dao.IStopDao.LastStopResultMap"/> 
 	<association property="transport" resultMap = "com.qaprosoft.navigator.dao.ITransportDao.TransportResultMap"/> 

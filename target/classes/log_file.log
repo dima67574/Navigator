@@ -152,3 +152,235 @@
 2019-04-03 04:08:09 INFO  DijkstraAlgorithm:32 - ->8 distance 37
 2019-04-03 04:08:09 INFO  DijkstraAlgorithm:32 - ->9 distance 39
 2019-04-03 04:08:09 INFO  DijkstraAlgorithm:32 - ->14 distance 46
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->8 distance 37
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->9 distance 39
+2019-04-03 10:31:15 INFO  DijkstraAlgorithm:32 - ->14 distance 46
+2019-04-03 10:34:17 ERROR Runner:34 - java.io.IOException: Could not find resource mybatis-config.xml
+2019-04-03 10:34:47 INFO  Runner:32 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->8 distance 37
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->9 distance 39
+2019-04-03 10:38:31 INFO  DijkstraAlgorithm:32 - ->14 distance 46
+2019-04-03 10:39:04 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 10:39:04 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 10:39:04 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 10:39:04 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 10:40:55 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 10:40:55 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 10:40:55 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 10:40:55 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:12:15 INFO  Runner:33 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 11:17:40 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 11:17:40 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 11:17:40 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 11:17:40 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:17:40 INFO  Runner:37 - [Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A], Distance [distance=2, firstStop=2, lastStop=3, transport-type=bus,number=A], Distance [distance=9, firstStop=1, lastStop=6, transport-type=bus,number=A], Distance [distance=4, firstStop=6, lastStop=5, transport-type=bus,number=A], Distance [distance=3, firstStop=8, lastStop=12, transport-type=bus,number=E], Distance [distance=6, firstStop=12, lastStop=13, transport-type=bus,number=E], Distance [distance=4, firstStop=13, lastStop=14, transport-type=bus,number=E], Distance [distance=4, firstStop=10, lastStop=14, transport-type=bus,number=E], Distance [distance=5, firstStop=1, lastStop=3, transport-type=tram,number=B], Distance [distance=1, firstStop=2, lastStop=4, transport-type=tram,number=B], Distance [distance=5, firstStop=4, lastStop=6, transport-type=tram,number=B], Distance [distance=2, firstStop=9, lastStop=11, transport-type=tram,number=F], Distance [distance=3, firstStop=11, lastStop=13, transport-type=tram,number=F], Distance [distance=7, firstStop=9, lastStop=14, transport-type=tram,number=F], Distance [distance=3, firstStop=4, lastStop=5, transport-type=taxi,number=C], Distance [distance=2, firstStop=8, lastStop=9, transport-type=taxi,number=G], Distance [distance=5, firstStop=9, lastStop=12, transport-type=taxi,number=G], Distance [distance=7, firstStop=4, lastStop=7, transport-type=underground,number=D], Distance [distance=30, firstStop=5, lastStop=8, transport-type=train,number=Tr-07]]
+2019-04-03 11:36:27 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 11:36:27 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 11:36:27 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 11:36:27 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:36:27 INFO  Runner:38 - Distance [distance=2, firstStop=2, lastStop=3, transport-type=bus,number=A]
+2019-04-03 11:36:47 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 11:36:47 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 11:36:47 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 11:36:47 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:36:47 INFO  Runner:38 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 11:40:53 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 11:40:53 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 11:40:53 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 11:40:53 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:40:53 INFO  Runner:38 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 11:45:21 ERROR DijkstraAlgorithm:57 - Graph doesn't contain start vertex1
+2019-04-03 11:45:21 ERROR DijkstraAlgorithm:92 - Graph doesn't contain end vertex12
+2019-04-03 11:45:21 INFO  Runner:38 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:27 - 1
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:32 - ->2 distance 3
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:32 - ->4 distance 4
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:32 - ->5 distance 7
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:32 - ->8 distance 37
+2019-04-03 11:46:04 INFO  DijkstraAlgorithm:32 - ->12 distance 40
+2019-04-03 11:46:04 INFO  Runner:38 - Distance [distance=3, firstStop=1, lastStop=2, transport-type=bus,number=A]
+2019-04-03 12:43:19 INFO  DijkstraAlgorithm:27 - 01-1
+2019-04-03 12:43:19 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 12:44:00 INFO  DijkstraAlgorithm:27 - 01-1
+2019-04-03 12:44:00 INFO  DijkstraAlgorithm:32 - ->01-2 distance 3
+2019-04-03 12:44:00 INFO  DijkstraAlgorithm:32 - ->01-4 distance 4
+2019-04-03 12:44:00 INFO  DijkstraAlgorithm:32 - ->01-5 distance 7
+2019-04-03 12:44:00 INFO  DijkstraAlgorithm:32 - ->02-8 distance 37
+2019-04-03 12:44:00 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 12:57:42 INFO  DijkstraAlgorithm:27 - 01-2
+2019-04-03 12:57:42 INFO  DijkstraAlgorithm:32 - ->01-4 distance 1
+2019-04-03 12:57:42 INFO  DijkstraAlgorithm:32 - ->01-5 distance 4
+2019-04-03 12:57:42 INFO  DijkstraAlgorithm:32 - ->02-8 distance 34
+2019-04-03 12:57:42 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:32:30 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:32:30 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:32:30 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:32:30 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:32:30 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:33:03 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:33:03 INFO  Runner:36 - Distance [distance=0, firstStop=null, lastStop=null, transport-null]
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:33:34 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:33:34 INFO  Runner:36 - Distance [distance=0, firstStop=null, lastStop=null, transport-null]
+2019-04-03 13:39:00 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:39:00 INFO  DijkstraAlgorithm:33 - ->01-4 distance 1
+2019-04-03 13:39:00 INFO  DijkstraAlgorithm:33 - ->01-5 distance 4
+2019-04-03 13:39:00 INFO  DijkstraAlgorithm:33 - ->02-8 distance 34
+2019-04-03 13:39:00 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:48:38 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:48:38 INFO  DijkstraAlgorithm:35 - ->01-4 distance 10
+2019-04-03 13:48:38 INFO  DijkstraAlgorithm:35 - ->01-5 distance 40
+2019-04-03 13:48:38 INFO  DijkstraAlgorithm:35 - ->02-8 distance 340
+2019-04-03 13:48:38 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:49:09 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:49:09 INFO  DijkstraAlgorithm:35 - ->01-4 distance 1Distance [distance=1, firstStop=null, lastStop=null, transport-null]
+2019-04-03 13:49:09 INFO  DijkstraAlgorithm:35 - ->01-5 distance 4Distance [distance=4, firstStop=null, lastStop=null, transport-null]
+2019-04-03 13:49:09 INFO  DijkstraAlgorithm:35 - ->02-8 distance 34Distance [distance=34, firstStop=null, lastStop=null, transport-null]
+2019-04-03 13:49:09 INFO  Runner:36 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:52:05 INFO  DijkstraAlgorithm:28 - 01-2
+2019-04-03 13:52:05 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 13:52:05 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 13:52:05 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 13:52:05 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 13:58:56 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 13:58:56 INFO  DijkstraAlgorithm:38 - ->01-4 distance 101-4
+2019-04-03 13:58:56 INFO  DijkstraAlgorithm:38 - ->01-5 distance 401-5
+2019-04-03 13:58:56 INFO  DijkstraAlgorithm:38 - ->02-8 distance 3402-8
+2019-04-03 13:58:56 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:00:49 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:00:49 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:00:49 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:00:49 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:00:49 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:01:39 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:01:39 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:01:39 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:01:39 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:01:39 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:02:08 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:02:08 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:03:02 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:03:02 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:03:02 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:03:02 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:03:02 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:03:26 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:03:26 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:03:26 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:03:26 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:03:26 INFO  Runner:37 - -1
+2019-04-03 14:03:58 INFO  DijkstraAlgorithm:31 - (unreached)02-8
+2019-04-03 14:03:58 INFO  Runner:37 - -1
+2019-04-03 14:04:17 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:04:17 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:04:17 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:04:17 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:04:17 INFO  Runner:37 - -1
+2019-04-03 14:04:33 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:04:33 INFO  DijkstraAlgorithm:39 - ->01-4 distance 1
+2019-04-03 14:04:33 INFO  DijkstraAlgorithm:39 - ->01-5 distance 4
+2019-04-03 14:04:33 INFO  DijkstraAlgorithm:39 - ->02-8 distance 34
+2019-04-03 14:04:33 INFO  Runner:37 - false
+2019-04-03 14:05:16 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:05:16 INFO  DijkstraAlgorithm:38 - ->01-4 distance 1
+2019-04-03 14:05:16 INFO  DijkstraAlgorithm:38 - ->01-5 distance 4
+2019-04-03 14:05:16 INFO  DijkstraAlgorithm:38 - ->02-8 distance 34
+2019-04-03 14:05:16 INFO  Runner:37 - false
+2019-04-03 14:08:52 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:08:52 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:08:52 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:08:52 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:08:52 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:17:10 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:17:10 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:17:10 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:17:10 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:17:10 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:18:32 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:18:32 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:18:32 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:18:32 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:18:32 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:19:03 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:19:03 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:19:03 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:19:03 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:19:03 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:20:02 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:20:02 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:20:02 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:20:02 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:20:02 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:20:23 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:20:23 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:20:23 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:20:23 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:20:23 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:23:36 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:23:36 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:23:36 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:23:36 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:23:36 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:23:59 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:23:59 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:23:59 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:23:59 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:23:59 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:26:26 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:26:26 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1 distance com.qaprosoft.navigator.algorithm.DijkstraAlgorithm$Vertex@2b175c00
+2019-04-03 14:26:26 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4 distance com.qaprosoft.navigator.algorithm.DijkstraAlgorithm$Vertex@6d026701
+2019-04-03 14:26:26 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34 distance com.qaprosoft.navigator.algorithm.DijkstraAlgorithm$Vertex@6cdba6dc
+2019-04-03 14:26:26 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:28:51 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:28:51 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:28:51 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:28:51 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:28:51 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:29:27 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:29:27 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:29:27 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:29:27 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:29:27 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:29:47 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:29:47 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:29:47 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:29:47 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:29:47 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:30:50 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:30:50 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:30:50 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:30:50 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:30:50 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:31:16 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:31:16 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:31:16 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:31:16 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:31:16 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
