@@ -384,3 +384,174 @@
 2019-04-03 14:31:16 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
 2019-04-03 14:31:16 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
 2019-04-03 14:31:16 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 14:35:53 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 14:35:53 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 14:35:53 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 14:35:53 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 14:35:53 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:14:36 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 16:14:36 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 16:14:36 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 16:14:36 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 16:14:36 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:43:44 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 16:43:44 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 16:43:44 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 16:43:44 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 16:43:44 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:44:05 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 16:44:05 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 16:44:05 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 16:44:05 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 16:44:05 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:50:54 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 16:50:54 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 16:50:54 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 16:50:54 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 16:50:54 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:51:15 INFO  DijkstraAlgorithm:29 - 01-2
+2019-04-03 16:51:15 INFO  DijkstraAlgorithm:34 - ->01-4 distance 1
+2019-04-03 16:51:15 INFO  DijkstraAlgorithm:34 - ->01-5 distance 4
+2019-04-03 16:51:15 INFO  DijkstraAlgorithm:34 - ->02-8 distance 34
+2019-04-03 16:51:15 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 16:59:12 INFO  Vertex:23 - 01-2
+2019-04-03 16:59:12 INFO  Vertex:28 - ->01-4 distance 1
+2019-04-03 16:59:12 INFO  Vertex:28 - ->01-5 distance 4
+2019-04-03 16:59:12 INFO  Vertex:28 - ->02-8 distance 34
+2019-04-03 16:59:12 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:08:08 INFO  Vertex:21 - 01-2
+2019-04-03 17:08:08 INFO  Vertex:26 - ->01-4 distance 1
+2019-04-03 17:08:08 INFO  Vertex:26 - ->01-5 distance 4
+2019-04-03 17:08:08 INFO  Vertex:26 - ->02-8 distance 34
+2019-04-03 17:08:08 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:08:56 INFO  Vertex:21 - 01-2
+2019-04-03 17:08:56 INFO  Vertex:26 - ->01-4 distance 1
+2019-04-03 17:08:56 INFO  Vertex:26 - ->01-5 distance 4
+2019-04-03 17:08:56 INFO  Vertex:26 - ->02-8 distance 34
+2019-04-03 17:08:56 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:10:24 INFO  Vertex:21 - 01-2
+2019-04-03 17:10:24 INFO  Vertex:26 - ->01-4 distance 1
+2019-04-03 17:10:24 INFO  Vertex:26 - ->01-5 distance 4
+2019-04-03 17:10:24 INFO  Vertex:26 - ->02-8 distance 34
+2019-04-03 17:10:24 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:10:44 INFO  Vertex:21 - 01-2
+2019-04-03 17:10:44 INFO  Vertex:26 - ->01-4 distance 1
+2019-04-03 17:10:44 INFO  Vertex:26 - ->01-5 distance 4
+2019-04-03 17:10:44 INFO  Vertex:26 - ->02-8 distance 34
+2019-04-03 17:10:44 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:16:48 INFO  Vertex:25 - 01-2
+2019-04-03 17:18:15 INFO  Vertex:25 - 01-2
+2019-04-03 17:18:15 INFO  Vertex:31 - ->01-4 distance 1
+2019-04-03 17:18:15 INFO  Vertex:31 - ->01-5 distance 4
+2019-04-03 17:18:15 INFO  Vertex:31 - ->02-8 distance 34
+2019-04-03 17:18:15 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:19:16 INFO  Vertex:25 - 01-2
+2019-04-03 17:19:35 INFO  Vertex:25 - 01-2
+2019-04-03 17:20:17 INFO  Vertex:25 - 01-2
+2019-04-03 17:22:02 INFO  Vertex:25 - 01-2
+2019-04-03 17:23:34 INFO  Vertex:25 - 01-2
+2019-04-03 17:23:34 INFO  Vertex:31 - ->01-4 distance 1
+2019-04-03 17:23:34 INFO  Vertex:31 - ->01-5 distance 4
+2019-04-03 17:23:34 INFO  Vertex:31 - ->02-8 distance 34
+2019-04-03 17:23:34 INFO  Runner:37 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:24:59 INFO  Vertex:24 - 01-2
+2019-04-03 17:24:59 INFO  Vertex:30 - ->01-4 distance 1
+2019-04-03 17:24:59 INFO  Vertex:30 - ->01-5 distance 4
+2019-04-03 17:24:59 INFO  Vertex:30 - ->02-8 distance 34
+2019-04-03 17:24:59 INFO  Runner:39 - Distance [distance=3, firstStop=01-1, lastStop=01-2, transport-type=bus,number=A]
+2019-04-03 17:25:24 INFO  Vertex:24 - 01-2
+2019-04-03 17:25:24 INFO  Vertex:30 - ->01-4 distance 1
+2019-04-03 17:25:24 INFO  Vertex:30 - ->01-5 distance 4
+2019-04-03 17:25:24 INFO  Vertex:30 - ->02-8 distance 34
+2019-04-03 17:25:24 INFO  Runner:39 - 02-8
+2019-04-03 17:26:32 INFO  Vertex:24 - 01-2
+2019-04-03 17:26:32 INFO  Vertex:30 - ->01-4 distance 1
+2019-04-03 17:26:32 INFO  Vertex:30 - ->01-5 distance 4
+2019-04-03 17:26:32 INFO  Vertex:30 - ->02-8 distance 34
+2019-04-03 17:26:32 INFO  Runner:39 - 02-8
+2019-04-03 17:33:50 INFO  Vertex:25 - 01-2
+2019-04-03 17:33:50 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:33:50 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:33:50 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:33:50 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:34:40 INFO  Vertex:25 - 01-2
+2019-04-03 17:34:40 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:34:40 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:34:40 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:34:40 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:36:31 INFO  Vertex:25 - 01-2
+2019-04-03 17:36:31 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:36:31 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:36:31 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:36:31 INFO  Runner:42 - [Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]]
+2019-04-03 17:37:48 INFO  Vertex:25 - 01-2
+2019-04-03 17:37:48 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:37:48 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:37:48 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:37:48 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=null, transport-null]
+2019-04-03 17:38:45 INFO  Vertex:25 - 01-2
+2019-04-03 17:38:45 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:38:45 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:38:45 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:38:45 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:39:10 INFO  Vertex:25 - 01-2
+2019-04-03 17:39:10 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:39:10 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:39:10 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:39:10 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:39:35 INFO  Vertex:25 - 01-2
+2019-04-03 17:39:35 INFO  Vertex:33 - ->01-4 distance 1
+2019-04-03 17:39:35 INFO  Vertex:33 - ->01-5 distance 4
+2019-04-03 17:39:35 INFO  Vertex:33 - ->02-8 distance 34
+2019-04-03 17:39:35 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:40:14 INFO  Vertex:25 - 01-2
+2019-04-03 17:40:14 INFO  Vertex:32 - ->01-4 distance 1
+2019-04-03 17:40:14 INFO  Vertex:32 - ->01-5 distance 4
+2019-04-03 17:40:14 INFO  Vertex:32 - ->02-8 distance 34
+2019-04-03 17:40:14 INFO  Runner:39 - Distance [distance=0, firstStop=null, lastStop=02-8, transport-null]
+2019-04-03 17:43:37 INFO  Vertex:25 - 01-2
+2019-04-03 17:46:14 INFO  Vertex:25 - 01-2
+2019-04-03 17:47:38 INFO  Vertex:25 - 01-2
+2019-04-03 17:47:39 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 17:47:39 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 17:47:39 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 17:49:52 INFO  Vertex:25 - 01-2
+2019-04-03 17:49:52 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 17:49:52 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 17:49:52 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 17:52:03 INFO  Vertex:28 - 01-2
+2019-04-03 17:52:03 INFO  Vertex:38 - ->01-4 distance 1
+2019-04-03 17:52:03 INFO  Vertex:38 - ->01-5 distance 4
+2019-04-03 17:52:03 INFO  Vertex:38 - ->02-8 distance 34
+2019-04-03 17:53:19 INFO  Vertex:25 - 01-2
+2019-04-03 17:53:19 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 17:53:19 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 17:53:19 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 17:57:41 INFO  Vertex:25 - 01-2
+2019-04-03 17:57:41 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 17:57:41 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 17:57:41 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 17:58:06 INFO  Vertex:25 - 01-2
+2019-04-03 17:58:06 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 17:58:06 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 17:58:06 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 18:00:40 INFO  Vertex:25 - 01-2
+2019-04-03 18:00:40 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 18:00:40 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 18:00:40 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 18:04:22 INFO  Vertex:25 - 01-2
+2019-04-03 18:04:22 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 18:04:22 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 18:04:22 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 18:04:49 INFO  Vertex:25 - 01-2
+2019-04-03 18:04:49 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 18:04:49 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 18:04:49 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 18:06:48 INFO  Vertex:25 - 01-2
+2019-04-03 18:06:48 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 18:06:48 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 18:06:48 INFO  Vertex:34 - ->02-8 distance 34
+2019-04-03 18:07:55 INFO  Vertex:25 - 01-2
+2019-04-03 18:07:55 INFO  Vertex:34 - ->01-4 distance 1
+2019-04-03 18:07:55 INFO  Vertex:34 - ->01-5 distance 4
+2019-04-03 18:07:55 INFO  Vertex:34 - ->02-8 distance 34

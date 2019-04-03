@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import com.qaprosoft.navigator.algorithm.DijkstraAlgorithm;
 import com.qaprosoft.navigator.dao.IDistanceDao;
 import com.qaprosoft.navigator.models.Distance;
+import com.qaprosoft.navigator.models.Stop;
 
 public class Runner {	
    
@@ -32,9 +33,8 @@ public class Runner {
 	         List<Distance> d = c.getAll();
 	         DijkstraAlgorithm g = new DijkstraAlgorithm(d);
 	         g.dijkstra("01-2");
-	         g.printPath("02-8");
-	         
-	         log.info(d.get(0).toString());
+	        g.printPath("02-8");
+	      
 	      } catch (IOException e) {
 	          log.error(e);
 	      }
