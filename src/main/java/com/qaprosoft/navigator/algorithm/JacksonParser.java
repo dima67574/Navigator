@@ -15,11 +15,11 @@ public class JacksonParser {
 	private final static Logger logger = Logger.getLogger(JacksonParser.class);
 	private final static String baseFile = "src//main//resources//navigator.json";
 
-	public static void toJSON(List<Trip> trip)  {
-		
+	public static void toJSON(Trip trip)  {
 		try {
 			ObjectMapper mapper = new ObjectMapper();
-			mapper.writeValue(new File(baseFile), trip);
+			final String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(trip);
+			Files.write(new File(baseFile).toPath(), Arrays.asList(json), StandardOpenOption.APPEND);
 			logger.info("json created");
 		} catch (JsonGenerationException e) {
 			logger.error(e);
@@ -27,11 +27,8 @@ public class JacksonParser {
 			logger.error(e);
 		} catch (IOException e) {
 			logger.error(e);
-		}
-		
-	}
-
-	
+		}	
+	}	
 }
 
 
