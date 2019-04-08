@@ -6774,3 +6774,34 @@
 2019-04-08 14:53:56 INFO  Vertex:41 - ->5 distance 4
 2019-04-08 14:53:56 INFO  Vertex:41 - ->8 distance 34
 2019-04-08 14:53:58 INFO  JacksonParser:23 - json created
+2019-04-08 16:20:45 INFO  Vertex:30 - 2
+2019-04-08 16:20:45 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:20:45 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:20:45 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:20:45 INFO  Vertex:30 - 2
+2019-04-08 16:20:45 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:20:45 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:20:45 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:20:47 INFO  JacksonParser:23 - json created
+2019-04-08 16:29:44 INFO  Vertex:30 - 2
+2019-04-08 16:29:44 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:29:44 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:29:44 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:29:44 INFO  Vertex:30 - 2
+2019-04-08 16:29:44 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:29:44 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:29:44 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:29:46 INFO  JacksonParser:23 - json created
+2019-04-08 16:32:01 INFO  Vertex:30 - 2
+2019-04-08 16:32:01 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:32:01 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:32:01 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:32:01 INFO  Vertex:30 - 2
+2019-04-08 16:32:01 INFO  Vertex:41 - ->4 distance 1
+2019-04-08 16:32:01 INFO  Vertex:41 - ->5 distance 4
+2019-04-08 16:32:01 INFO  Vertex:41 - ->8 distance 34
+2019-04-08 16:32:03 INFO  JacksonParser:23 - json created
+2019-04-08 16:32:55 INFO  JacksonParser:23 - json created
+2019-04-08 16:33:04 INFO  JacksonParser:23 - json created
+2019-04-08 16:34:10 INFO  JacksonParser:23 - json created
+2019-04-08 16:37:34 INFO  JacksonParser:23 - json created

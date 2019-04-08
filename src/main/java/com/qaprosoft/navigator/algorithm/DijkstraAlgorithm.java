@@ -21,15 +21,11 @@ public class DijkstraAlgorithm {
 		   for (Distance e : edges) {			   
 		         if (!graph.containsKey(e.getFirstStop().getNumber())) graph.put(e.getFirstStop().getNumber(), new Vertex(e.getFirstStop().getId()));
 		         if (!graph.containsKey(e.getLastStop().getNumber())) graph.put(e.getLastStop().getNumber(), new Vertex(e.getLastStop().getId()));
-		    
 		   }
-		  
 		      for (Distance e : edges) {
 		         graph.get(e.getFirstStop().getNumber()).neighbours.put(graph.get(e.getLastStop().getNumber()), e.getDistance());
-		         System.out.println(graph.get(e.getFirstStop().getNumber()).neighbours.put(graph.get(e.getLastStop().getNumber()), e.getDistance()));
 		      }
 		   }
-	   
 	   public void dijkstra(String startName) {
 	      if (!graph.containsKey(startName)) {
 	    	  log.error("Graph doesn't contain start vertex"+ startName);
@@ -41,20 +37,16 @@ public class DijkstraAlgorithm {
 	         v.previous = v == source ? source : null;
 	         v.dist = v == source ? 0 : Integer.MAX_VALUE;
 	         q.add(v);
-	         
 	      }
-	  
 	      dijkstra(q);
 	   }
 	   private void dijkstra(final NavigableSet<Vertex> q) {      
 	      Vertex u, v;
 	      while (!q.isEmpty()) {
-	  
 	         u = q.pollFirst();
 	         if (u.dist == Integer.MAX_VALUE) break;
 	         for (Map.Entry<Vertex, Integer> a : u.neighbours.entrySet()) {
 	            v = a.getKey(); 
-	  
 	            final int alternateDist = u.dist + a.getValue();
 	            if (alternateDist < v.dist) { 
 	               q.remove(v);
@@ -65,7 +57,6 @@ public class DijkstraAlgorithm {
 	         }
 	      }
 	   }
-	  
 	   public List <Stop> printPath(String endName) {
 	      if (!graph.containsKey(endName)) {
 	    	  log.error("Graph doesn't contain end vertex"+ endName);
@@ -74,5 +65,4 @@ public class DijkstraAlgorithm {
 	  List <Stop> r = new ArrayList<Stop>();
 	  return  graph.get(endName).printPath(r);
 	   }
-	  
 	}
