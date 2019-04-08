@@ -67,10 +67,10 @@ public class Navigator {
 	 	        tr.insert(trip);
 	 	        trips.add(trip);
 	 	        session.commit();
+			JacksonParser.toJSON(trip);
 	    	 }
 	      }
 	      }
-	      JacksonParser.toJSON(trips);
 	      } catch (IOException e) {
 	          log.error(e);
 	      }
