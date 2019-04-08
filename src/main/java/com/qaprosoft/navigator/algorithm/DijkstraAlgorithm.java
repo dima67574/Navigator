@@ -23,7 +23,7 @@ public class DijkstraAlgorithm {
 		         if (!graph.containsKey(e.getLastStop().getNumber())) graph.put(e.getLastStop().getNumber(), new Vertex(e.getLastStop().getId()));
 		   }
 		      for (Distance e : edges) {
-		         graph.get(e.getFirstStop().getNumber()).neighbours.put(graph.get(e.getLastStop().getNumber()), e.getDistance());
+		         graph.get(e.getFirstStop().getNumber()).getNeighbours().put(graph.get(e.getLastStop().getNumber()), e.getDistance());
 		      }
 		   }
 	   public void dijkstra(String startName) {
@@ -34,8 +34,8 @@ public class DijkstraAlgorithm {
 	      final Vertex source = graph.get(startName);
 	      NavigableSet<Vertex> q = new TreeSet<Vertex>();
 	      for (Vertex v : graph.values()) {
-	         v.previous = v == source ? source : null;
-	         v.dist = v == source ? 0 : Integer.MAX_VALUE;
+	         v.setPrevious(v == source ? source : null);
+	         v.setDist(v == source ? 0 : Integer.MAX_VALUE);
 	         q.add(v);
 	      }
 	      dijkstra(q);
@@ -44,14 +44,14 @@ public class DijkstraAlgorithm {
 	      Vertex u, v;
 	      while (!q.isEmpty()) {
 	         u = q.pollFirst();
-	         if (u.dist == Integer.MAX_VALUE) break;
-	         for (Map.Entry<Vertex, Integer> a : u.neighbours.entrySet()) {
+	         if (u.getDist() == Integer.MAX_VALUE) break;
+	         for (Map.Entry<Vertex, Integer> a : u.getNeighbours().entrySet()) {
 	            v = a.getKey(); 
-	            final int alternateDist = u.dist + a.getValue();
-	            if (alternateDist < v.dist) { 
+	            final int alternateDist = u.getDist() + a.getValue();
+	            if (alternateDist < v.getDist()) { 
 	               q.remove(v);
-	               v.dist = alternateDist;
-	               v.previous = u;
+	               v.setDist(alternateDist);
+	               v.setPrevious(u);
 	               q.add(v);
 	            } 
 	         }

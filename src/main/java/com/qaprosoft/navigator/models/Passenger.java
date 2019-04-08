@@ -1,6 +1,9 @@
 package com.qaprosoft.navigator.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Passenger extends Person{
+	@JsonIgnore 
 	private String passport;
 	public Passenger() {}
 	public String getPassport() {

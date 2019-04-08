@@ -1,6 +1,9 @@
 package com.qaprosoft.navigator.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Trip extends AbstractModel {
+	@JsonIgnore
 	private Passenger passenger;
 	private Distance distance;
 	public Trip() {}

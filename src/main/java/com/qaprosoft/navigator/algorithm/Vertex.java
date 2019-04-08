@@ -11,24 +11,24 @@ import com.qaprosoft.navigator.models.Stop;
 
 public class Vertex implements Comparable<Vertex>{
 	private static final Logger log = LogManager.getLogger(Vertex.class);
-	public  int id;
-    public int dist = Integer.MAX_VALUE; 
-    public Vertex previous = null;
-    public final Map<Vertex, Integer> neighbours = new HashMap<Vertex, Integer>();
+	private  int id;
+	private int dist = Integer.MAX_VALUE; 
+	private Vertex previous = null;
+	private final Map<Vertex, Integer> neighbours = new HashMap<Vertex, Integer>();
     public Vertex(int id) {
        this.id = id;
     }
     public List<Stop> printPath(List <Stop> s) {
     int n ;
-       if (this == this.previous) {
+       if (this == this.getPrevious()) {
     	  n = this.id;
     	  Stop s1 = new Stop();
     	  s1.setId(n);
     	  s.add(s1);
-       } else if (this.previous == null) {
+       } else if (this.getPrevious() == null) {
       	 log.info("(unreached)"+ this.id);
        } else {
-          this.previous.printPath(s);
+          this.getPrevious().printPath(s);
           n = this.id;
           Stop s2 = new Stop();
      	  s2.setId(n);
@@ -37,6 +37,23 @@ public class Vertex implements Comparable<Vertex>{
 	return s;	
     }
     public int compareTo(Vertex other) {
-       return Integer.compare(dist, other.dist);
+       return Integer.compare(getDist(), other.getDist());
     }
+	public Map<Vertex, Integer> getNeighbours() {
+		return neighbours;
+	}
+	public Vertex getPrevious() {
+		return previous;
+	}
+	public void setPrevious(Vertex previous) {
+		this.previous = previous;
+	}
+	public int getDist() {
+		return dist;
+	}
+	public void setDist(int dist) {
+		this.dist = dist;
+	}
+	
+	
  }

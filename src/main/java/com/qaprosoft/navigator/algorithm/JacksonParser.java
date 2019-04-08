@@ -2,7 +2,9 @@ package com.qaprosoft.navigator.algorithm;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 

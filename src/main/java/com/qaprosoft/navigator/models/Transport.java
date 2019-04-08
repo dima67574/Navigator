@@ -1,8 +1,12 @@
 package com.qaprosoft.navigator.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Transport extends AbstractModel {
 	private String number;
+	@JsonIgnore 
 	private String fuel;
+	@JsonIgnore 
 	private Driver driver;
 	private Type type;
 	public Transport() {}

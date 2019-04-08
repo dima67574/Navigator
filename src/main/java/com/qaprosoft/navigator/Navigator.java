@@ -44,7 +44,6 @@ public class Navigator {
 	         g.printPath(to);
 	         List <Stop> r = new ArrayList<Stop>();
 	         r= g.printPath(to); 
-	         List <Trip> trips = new ArrayList<Trip>();
 	      int i = r.size();
 	      int n = i-1;
 	      int k = i-1;
@@ -61,20 +60,20 @@ public class Navigator {
 			    	 k--;
 			    	 }
 	    	 Distance dis = distance.getByStop(a.getId(),a1.getId());
-	    	 if(dis!=null) {
-	 	        trip.setPassenger(passenger);
-	 	        trip.setDistance(dis); 
-	 	        tr.insert(trip);
-	 	        trips.add(trip);
-	 	        session.commit();
-			JacksonParser.toJSON(trip);
-	    	 }
+		    	 if(dis!=null) {
+		 	        trip.setPassenger(passenger);
+		 	        trip.setDistance(dis); 
+		 	        tr.insert(trip);
+		 	        session.commit();
+		 	        JacksonParser.toJSON(trip);
+		    	 }
+	    	  }
 	      }
-	      }
-	      } catch (IOException e) {
+	      
+	    } catch (IOException e) {
 	          log.error(e);
-	      }
-	     }
+	    }
+	}
 	public String getFrom() {
 		return from;
 	}
