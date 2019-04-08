@@ -21,6 +21,16 @@
 		from Passengers pas WHERE id=#{id} 
 	</select> 
 	
+	<select id = "getByName" parameterType ="String" resultMap = "PassengerResultMap"> 
+		select pas.id as passenger_id,
+		pas.name as passenger_name,
+		pas.second_name as passenger_secondName,
+		pas.passport as passenger_passport
+		
+		from Passengers pas WHERE pas.name = #{name} AND pas.second_name= #{secondName}
+	</select> 
+	
+	
 	<update id = "update" parameterType = "Passenger">
 	UPDATE Passengers SET name=#{name}, second_name=#{secondName}, passport=#{passport} WHERE id=#{id}
 	</update>

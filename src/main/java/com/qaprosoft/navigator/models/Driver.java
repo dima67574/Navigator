@@ -11,7 +11,7 @@ public class Driver extends Person {
 	}
 	@Override
 	public String toString() {
-		return "Driver [id=" + getId()+ "name=" + getName() + ", secondName=" + getSecondName() +" license=" + license +  "]";
+		return "Driver [name=" + getName() + ", secondName=" + getSecondName() +" license=" + license +  "]";
 	}
 
 	

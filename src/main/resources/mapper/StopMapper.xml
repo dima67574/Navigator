@@ -10,12 +10,12 @@
 	<result property = "number" column = "stop_number"/> 
 	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityResultMap"/> 
 	</resultMap> 
-	
 	<resultMap type = "Stop" id = "LastStopResultMap"> 
 		<id property = "id" column = "lstop_id"/> 
 	<result property = "number" column = "lstop_number"/> 
-	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityResultMap"/> 
-	</resultMap>
+	<association property="city" resultMap = "com.qaprosoft.navigator.dao.ICityDao.CityToResultMap"/> 
+	</resultMap> 
+	
 	
 	<select id = "getById" parameterType ="int" resultMap = "StopResultMap"> 
 		select st.id as stop_id,
@@ -28,6 +28,20 @@
 		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id 
 		WHERE st.id = #{id}
 	</select> 
+	
+	<select id = "getByIdLast" parameterType ="int" resultMap = "LastStopResultMap"> 
+		select
+		stp.id as lstop_id,
+		stp.number as lstop_number,
+		cit.id as tocity_id,
+		cit.city as tocity_name,
+		co.id as country_id,
+		co.country as country_name
+		FROM Stops stp LEFT OUTER JOIN Cities cit ON stp.Cities_id = cit.id
+		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id 
+		WHERE stp.id = #{id}
+	</select> 
+
 	
 	<update id = "update" parameterType = "Stop">
 	UPDATE Stops SET number=#{number} WHERE id=#{id}

@@ -10,6 +10,13 @@
 	<result property = "city" column = "city_name"/> 
 	<association property="country" resultMap = "com.qaprosoft.navigator.dao.ICountryDao.CountryResultMap"/> 
 	</resultMap> 
+	<resultMap type = "City" id = "CityToResultMap"> 
+		<id property = "id" column = "cityto_id"/> 
+	<result property = "city" column = "cityto_name"/> 
+	<association property="country" resultMap = "com.qaprosoft.navigator.dao.ICountryDao.CountryToResultMap"/> 
+	</resultMap> 
+	
+
 	
 	<select id = "getById" parameterType ="int" resultMap = "CityResultMap"> 
 		select ci.id as city_id,

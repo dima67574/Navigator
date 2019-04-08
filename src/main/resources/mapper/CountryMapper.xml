@@ -2,19 +2,18 @@
 <mapper namespace = "com.qaprosoft.navigator.dao.ICountryDao"> 
 
 	<insert id = "insert" parameterType = "Country" useGeneratedKeys = "true" keyProperty = "id">
-	INSERT INTO  Countries (id, country) VALUES (#{id}, #{country})
+	INSERT INTO  Countries (country) VALUES (#{country})
 	</insert>
 	
 	<resultMap type = "Country" id = "CountryResultMap"> 
 		<id property = "id" column = "country_id"/> 
 	<result property = "country" column = "country_name"/> 
 	</resultMap> 
-	
-	<select id = "getById" parameterType ="int" resultMap = "CountryResultMap"> 
-		select co.id as country_id,
-		co.country as country_name
-		from Countries co WHERE id=#{id} 
-	</select> 
+	<resultMap type = "Country" id = "CountryToResultMap"> 
+		<id property = "id" column = "countryto_id"/> 
+	<result property = "country" column = "countryto_name"/> 
+	</resultMap> 
+
 	
 	<update id = "update" parameterType = "Country">
 	UPDATE Countries SET country=#{country} WHERE id=#{id}

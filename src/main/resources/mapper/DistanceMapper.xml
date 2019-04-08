@@ -23,12 +23,22 @@
 		tr.id as transport_id,
 		tr.number as transport_number,
 		t.id as type_id,
-		t.type as type_name
+		t.type as type_name,
+		ci.id as city_id,
+		ci.city as city_name,
+		cit.id as cityto_id,
+		cit.city as cityto_name,
+		co.id as countryto_id,
+		co.country as countryto_name
 			
 		FROM Distances dis LEFT OUTER JOIN Stops st ON dis.Stop_from = st.id
 		LEFT OUTER JOIN Stops stp ON dis.Stop_to = stp.id
 		LEFT OUTER JOIN Transport tr ON dis.Transport_id = tr.id
 		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
+		LEFT OUTER JOIN Cities ci ON st.Cities_id = ci.id
+		LEFT OUTER JOIN Cities cit ON stp.Cities_id = cit.id
+		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id
+		LEFT OUTER JOIN Countries con ON cit.Countries_id = con.id
 		
 		WHERE dis.id = #{id}
 	</select> 
@@ -41,16 +51,81 @@
 		stp.number as lstop_number,
 		tr.id as transport_id,
 		tr.number as transport_number,
+		tr.fuel as transport_fuel,
+		dr.id as driver_id,
+		dr.name as driver_name,
+		dr.second_name as driver_secondName,
+		l.id as license_id,
+		l.DL as dl,
+		l.class as class,
+		l.EXP as exp,
+		l.END as end,
 		t.id as type_id,
-		t.type as type_name
+		t.type as type_name,
+		ci.id as city_id,
+		ci.city as city_name,
+		co.id as country_id,
+		co.country as country_name,
+		cit.id as cityto_id,
+		cit.city as cityto_name,
+		con.id as countryto_id,
+		con.country as countryto_name
 			
 		FROM Distances dis LEFT OUTER JOIN Stops st ON dis.Stop_from = st.id
 		LEFT OUTER JOIN Stops stp ON dis.Stop_to = stp.id
 		LEFT OUTER JOIN Transport tr ON dis.Transport_id = tr.id
-		LEFT OUTER JOIN Type t ON tr.Type_id = t.id		
+		LEFT OUTER JOIN Drivers dr ON tr.Drivers_id = dr.id
+		LEFT OUTER JOIN Licenses l ON dr.Licenses_id = l.id
+		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
+		LEFT OUTER JOIN Cities ci ON st.Cities_id = ci.id
+		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id
+		LEFT OUTER JOIN Cities cit ON stp.Cities_id = cit.id
+		LEFT OUTER JOIN Countries con ON cit.Countries_id = con.id
 		
 	</select> 
-	
+		<select id = "getByStop" parameterType ="int"  resultMap = "DistanceResultMap"> 
+		select dis.id as distance_id,
+		dis.distance as distance,
+		st.id as stop_id,
+		st.number as stop_number,
+		stp.id as lstop_id,
+		stp.number as lstop_number,
+		tr.id as transport_id,
+		tr.number as transport_number,
+		t.id as type_id,
+		t.type as type_name,
+		tr.fuel as transport_fuel,
+		dr.id as driver_id,
+		dr.name as driver_name,
+		dr.second_name as driver_secondName,
+		l.id as license_id,
+		l.DL as dl,
+		l.class as class,
+		l.EXP as exp,
+		l.END as end,
+		ci.id as city_id,
+		ci.city as city_name,
+		co.id as country_id,
+		co.country as country_name,
+		cit.id as cityto_id,
+		cit.city as cityto_name,
+		con.id as countryto_id,
+		con.country as countryto_name
+			
+		FROM Distances dis LEFT OUTER JOIN Stops st ON dis.Stop_from = st.id
+		LEFT OUTER JOIN Stops stp ON dis.Stop_to = stp.id
+		LEFT OUTER JOIN Transport tr ON dis.Transport_id = tr.id
+		LEFT OUTER JOIN Drivers dr ON tr.Drivers_id = dr.id
+		LEFT OUTER JOIN Licenses l ON dr.Licenses_id = l.id
+		LEFT OUTER JOIN Type t ON tr.Type_id = t.id
+		LEFT OUTER JOIN Cities ci ON st.Cities_id = ci.id
+		LEFT OUTER JOIN Countries co ON ci.Countries_id = co.id
+		LEFT OUTER JOIN Cities cit ON stp.Cities_id = cit.id
+		LEFT OUTER JOIN Countries con ON cit.Countries_id = con.id
+		
+		
+		WHERE st.id = #{firstStopId} AND stp.id= #{lastStopId}
+	</select> 
 	<update id = "update" parameterType = "Distance">
 	UPDATE Distances SET distance=#{distance} WHERE id=#{id}
 	</update>

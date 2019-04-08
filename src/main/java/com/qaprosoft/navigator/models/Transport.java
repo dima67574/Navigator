@@ -3,8 +3,6 @@ package com.qaprosoft.navigator.models;
 public class Transport extends AbstractModel {
 	private String number;
 	private String fuel;
-	private Stop firstStop;
-	private Stop lastStop;
 	private Driver driver;
 	private Type type;
 	public Transport() {}
@@ -19,18 +17,6 @@ public class Transport extends AbstractModel {
 	}
 	public void setFuel(String fuel) {
 		this.fuel = fuel;
-	}
-	public Stop getFirstStop() {
-		return firstStop;
-	}
-	public void setFirstStop(Stop firstStop) {
-		this.firstStop = firstStop;
-	}
-	public Stop getLastStop() {
-		return lastStop;
-	}
-	public void setLastStop(Stop lastStop) {
-		this.lastStop = lastStop;
 	}
 
 	public Driver getDriver() {
@@ -47,8 +33,9 @@ public class Transport extends AbstractModel {
 	}
 	@Override
 	public String toString() {
-		return "type=" + type +","+"number=" + number  ;
+		return "Transport [number=" + number + ", fuel=" + fuel +  "driver=" + driver + ", type=" + type + "]";
 	}
+	
 	
 	
 	

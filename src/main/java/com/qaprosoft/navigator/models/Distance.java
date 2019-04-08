@@ -46,6 +46,7 @@ public class Distance extends AbstractModel {
 	public void setTransport(Transport transport) {
 		this.transport = transport;
 	}
+	
 
 
 	public String toString() {
