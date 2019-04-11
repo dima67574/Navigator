@@ -36,12 +36,12 @@ public class Navigator {
 	     	 IPassengerDao p = session.getMapper(IPassengerDao.class); 
 	         Passenger passenger = new Passenger();
 	         passenger=p.getByName("Bruce", "Harvey");
-	         Trip trip = new Trip();
+	        
 	         ITripDao tr = session.getMapper(ITripDao.class);
+	         List<Trip> trips=new ArrayList<Trip>();
 	         List<Distance> distances = distance.getAll();
 	         DijkstraAlgorithm g = new DijkstraAlgorithm(distances);
 	         g.dijkstra(from);
-	         g.printPath(to);
 	         List <Stop> r = new ArrayList<Stop>();
 	         r= g.printPath(to); 
 	      int i = r.size();
@@ -61,15 +61,18 @@ public class Navigator {
 			    	 }
 	    	 Distance dis = distance.getByStop(a.getId(),a1.getId());
 		    	 if(dis!=null) {
+		    		Trip trip = new Trip();
 		 	        trip.setPassenger(passenger);
 		 	        trip.setDistance(dis); 
 		 	        tr.insert(trip);
 		 	        session.commit();
-		 	        JacksonParser.toJSON(trip);
+		 	        trips.add(trip);
+		 	       
+		 	        
 		    	 }
 	    	  }
 	      }
-	      
+	      JacksonParser.toJSON(trips);
 	    } catch (IOException e) {
 	          log.error(e);
 	    }

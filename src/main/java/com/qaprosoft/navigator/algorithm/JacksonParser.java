@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -17,11 +18,12 @@ public class JacksonParser {
 	private final static Logger logger = Logger.getLogger(JacksonParser.class);
 	private final static String baseFile = "src//main//resources//navigator.json";
 
-	public static void toJSON(Trip trip)  {
+	public static void toJSON(List<Trip> trip)  {
 		try {
 			ObjectMapper mapper = new ObjectMapper();
 			final String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(trip);
-			Files.write(new File(baseFile).toPath(), Arrays.asList(json), StandardOpenOption.APPEND);
+			Files.deleteIfExists(new File(baseFile).toPath());			
+			Files.write(new File(baseFile).toPath(), Arrays.asList(json), StandardOpenOption.CREATE);
 			logger.info("json created");
 		} catch (JsonGenerationException e) {
 			logger.error(e);

@@ -24,6 +24,7 @@ public class DijkstraAlgorithm {
 		   }
 		      for (Distance e : edges) {
 		         graph.get(e.getFirstStop().getNumber()).getNeighbours().put(graph.get(e.getLastStop().getNumber()), e.getDistance());
+		         graph.get(e.getLastStop().getNumber()).getNeighbours().put(graph.get(e.getFirstStop().getNumber()), e.getDistance());
 		      }
 		   }
 	   public void dijkstra(String startName) {

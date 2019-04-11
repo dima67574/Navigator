@@ -1,0 +1,65 @@
+[ {
+  "distance" : {
+    "distance" : 3,
+    "firstStop" : {
+      "number" : "01-1"
+    },
+    "lastStop" : {
+      "number" : "01-2"
+    },
+    "transport" : {
+      "number" : "A",
+      "type" : {
+        "type" : "bus"
+      }
+    }
+  }
+}, {
+  "distance" : {
+    "distance" : 1,
+    "firstStop" : {
+      "number" : "01-2"
+    },
+    "lastStop" : {
+      "number" : "01-4"
+    },
+    "transport" : {
+      "number" : "B",
+      "type" : {
+        "type" : "tram"
+      }
+    }
+  }
+}, {
+  "distance" : {
+    "distance" : 3,
+    "firstStop" : {
+      "number" : "01-4"
+    },
+    "lastStop" : {
+      "number" : "01-5"
+    },
+    "transport" : {
+      "number" : "C",
+      "type" : {
+        "type" : "taxi"
+      }
+    }
+  }
+}, {
+  "distance" : {
+    "distance" : 30,
+    "firstStop" : {
+      "number" : "01-5"
+    },
+    "lastStop" : {
+      "number" : "02-8"
+    },
+    "transport" : {
+      "number" : "Tr-07",
+      "type" : {
+        "type" : "train"
+      }
+    }
+  }
+} ]
